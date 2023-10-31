@@ -33,23 +33,6 @@ const DocumentsPage = () => {
         Welcome to {user?.firstName}&apos;s SyncLab
       </h1>
 
-      {/* <Image
-        src="/empty.png"
-        height="300"
-        width="300"
-        alt="Empty"
-        className="dark:hidden"
-      />
-      <Image
-        src="/empty-dark.png"
-        height="300"
-        width="300"
-        alt="Empty"
-        className="hidden dark:block"
-      /> */}
-
-
-
       <div className="flex flex-row space-x-10 justify-center">
         <Button className="w-60" onClick={onCreate}>
           <PlusCircle className="h-4 w-4 mr-2" />
@@ -68,7 +51,7 @@ const DocumentsPage = () => {
         </div>
 
         <div>
-          
+
         </div>
       </div>
 
@@ -78,7 +61,7 @@ const DocumentsPage = () => {
         </div>
 
         <div>
-          
+
         </div>
       </div>
     </div>
