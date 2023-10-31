@@ -10,46 +10,57 @@ const programs = [
   {
     name: 'Program 2',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 3',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 4',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 5',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 6',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 7',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 8',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 9',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 10',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 11',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 12',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   // Add more Program objects here...
 ];

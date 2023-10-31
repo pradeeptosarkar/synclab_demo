@@ -5,51 +5,62 @@ const projects = [
   {
     name: 'Project 1',
     icon: './noun-program-3427435.png',
-    url: 'https://www.github.com'
+    url: ''
   },
   {
     name: 'Project 2',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 3',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 4',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 5',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 6',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 7',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 8',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 9',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 10',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 11',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Project 12',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   // Add more Program objects here...
 ];
