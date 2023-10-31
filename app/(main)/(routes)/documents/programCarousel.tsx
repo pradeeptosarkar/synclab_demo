@@ -5,6 +5,7 @@ const programs = [
   {
     name: 'Program 1',
     icon: './noun-program-3427435.png',
+    url: ''
   },
   {
     name: 'Program 2',
@@ -61,19 +62,25 @@ const ProgramCarousel = () => {
       ProgramGroups.push(programs.slice(i, i + ProgramsPerPage));
     }
   
+    const handleProgramClick = (program: { url?: string }) => {
+        if (program.url) {
+          window.open(program.url, '_blank');
+        }
+      };
+
     return (
       <div>
         <div className="carousel-container flex overflow-x-auto">
           <Carousel showThumbs={false}>
             {ProgramGroups.map((group, groupIndex) => (
               <div key={groupIndex} className="Program-group flex">
-                {group.map((Program, index) => (
-                  <div key={index} className="Program-item w-1/4 p-4 text-center">
-                    <img src={Program.icon} alt={Program.name} className="max-w-full" />
-                    <p>{Program.name}</p>
-                  </div>
-                ))}
-              </div>
+              {group.map((Program, index) => (
+                <div key={index} className="Program-item w-1/4 p-4 text-center cursor-pointer" onClick={() => handleProgramClick(Program)}>
+                  <img src={Program.icon} alt={Program.name} className="max-w-full" />
+                  <p>{Program.name}</p>
+                </div>
+              ))}
+            </div>
             ))}
           </Carousel>
         </div>

@@ -5,6 +5,7 @@ const projects = [
   {
     name: 'Project 1',
     icon: './noun-program-3427435.png',
+    url: 'https://www.github.com'
   },
   {
     name: 'Project 2',
@@ -61,6 +62,12 @@ const ProjectCarousel = () => {
       ProjectGroups.push(projects.slice(i, i + ProjectsPerPage));
     }
   
+    const handleProjectClick = (project: { url?: string }) => {
+        if (project.url) {
+          window.open(project.url, '_blank');
+        }
+      };
+
     return (
       <div>
         <div className="carousel-container flex overflow-x-auto">
@@ -68,7 +75,7 @@ const ProjectCarousel = () => {
             {ProjectGroups.map((group, groupIndex) => (
               <div key={groupIndex} className="Program-group flex">
                 {group.map((Project, index) => (
-                  <div key={index} className="Program-item w-1/4 p-4 text-center">
+                  <div key={index} className="Program-item w-1/4 p-4 text-center cursor-pointer" onClick={() => handleProjectClick(Project)}>
                     <img src={Project.icon} alt={Project.name} className="max-w-full" />
                     <p>{Project.name}</p>
                   </div>

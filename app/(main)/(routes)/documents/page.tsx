@@ -60,7 +60,7 @@ const DocumentsPage = () => {
 
       <div className="flex-row">
         <div className="text-4xl">
-          <p>Your Programs</p>
+          <p>Your Projects</p>
         </div>
 
         <div>
