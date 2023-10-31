@@ -175,17 +175,19 @@ export const Navigation = () => {
             label="New note"
             icon={PlusCircle}
           />
+
+          <DocumentList/>
         </div>
 
         <div className="mt-4">
           
           <Item
-            onClick={handleCreate}
+            //onClick={handleCreate}
             icon={Plus}
             label="Add a new program"
           />
           <Item
-            onClick={handleCreate}
+            //onClick={handleCreate}
             icon={Plus}
             label="Add a new project"
           />
@@ -194,19 +196,19 @@ export const Navigation = () => {
         <div className="mt-4">
 
           <Item
-            onClick={handleCreate}
+            //onClick={handleCreate}
             icon={MessageCircle}
             label="Start a new Chat"
           />
 
           <Item
-            onClick={handleCreate}
+            //onClick={handleCreate}
             icon={Video}
             label="Start a new Video Call"
           />
 
           <Item
-            onClick={handleCreate}
+            //onClick={handleCreate}
             icon={CalendarDays}
             label="Your Calendar"
           />
