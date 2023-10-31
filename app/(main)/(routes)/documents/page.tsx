@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
 
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
+import ProgramCarousel from "./programCarousel";
+import ProjectCarousel from "./projectCarousel";
 
 const DocumentsPage = () => {
   const router = useRouter();
@@ -27,13 +29,13 @@ const DocumentsPage = () => {
   };
 
   return (
-    <div className="h-full flex flex-col space-y-4">
+    <div className="flex flex-col space-y-4">
 
-      <h1 className="text-3xl font-medium text-center">
+      <h1 className="text-3xl font-medium text-center py-10">
         Welcome to {user?.firstName}&apos;s SyncLab
       </h1>
 
-      <div className="flex flex-row space-x-10 justify-center">
+      <div className="flex flex-row space-x-10 justify-center pb-5">
         <Button className="w-60" onClick={onCreate}>
           <PlusCircle className="h-4 w-4 mr-2" />
           Create a new program
@@ -51,8 +53,9 @@ const DocumentsPage = () => {
         </div>
 
         <div>
-
+          <ProgramCarousel></ProgramCarousel>
         </div>
+
       </div>
 
       <div className="flex-row">
@@ -61,8 +64,9 @@ const DocumentsPage = () => {
         </div>
 
         <div>
-
+          <ProjectCarousel></ProjectCarousel>
         </div>
+
       </div>
     </div>
   );
