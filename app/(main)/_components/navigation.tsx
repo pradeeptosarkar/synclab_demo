@@ -7,7 +7,11 @@ import {
   PlusCircle,
   Search,
   Settings,
-  Trash
+  Trash,
+  MessageCircle,
+  Video,
+  CalendarDays,
+  Github
 } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { ElementRef, useEffect, useRef, useState } from "react";
@@ -152,6 +156,7 @@ export const Navigation = () => {
         >
           <ChevronsLeft className="h-6 w-6" />
         </div>
+
         <div>
           <UserItem />
           <Item
@@ -167,17 +172,57 @@ export const Navigation = () => {
           />
           <Item
             onClick={handleCreate}
-            label="New page"
+            label="New note"
             icon={PlusCircle}
           />
         </div>
+
         <div className="mt-4">
-          <DocumentList />
+          
           <Item
             onClick={handleCreate}
             icon={Plus}
-            label="Add a page"
+            label="Add a new program"
           />
+          <Item
+            onClick={handleCreate}
+            icon={Plus}
+            label="Add a new project"
+          />
+        </div>
+
+        <div className="mt-4">
+
+          <Item
+            onClick={handleCreate}
+            icon={MessageCircle}
+            label="Start a new Chat"
+          />
+
+          <Item
+            onClick={handleCreate}
+            icon={Video}
+            label="Start a new Video Call"
+          />
+
+          <Item
+            onClick={handleCreate}
+            icon={CalendarDays}
+            label="Your Calendar"
+          />
+        </div>
+
+        <div className="mt-4">
+          <a href="https://dotread.netlify.app/" target="_blank">
+          <Item
+            icon={Github}
+            label="dotRead Code Explorer"
+          />
+          </a>
+        </div>
+
+
+        <div className="mt-[8rem]">
           <Popover>
             <PopoverTrigger className="w-full mt-4">
               <Item label="Trash" icon={Trash} />
@@ -190,6 +235,8 @@ export const Navigation = () => {
             </PopoverContent>
           </Popover>
         </div>
+
+
         <div
           onMouseDown={handleMouseDown}
           onClick={resetWidth}

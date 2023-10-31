@@ -47,7 +47,7 @@ const DocumentsPage = () => {
         </Button>
       </div>
 
-      <div className="flex-row">
+      <div className="flex-row mx-4">
         <div className="text-4xl">
           <p>Your Programs</p>
         </div>
@@ -58,7 +58,7 @@ const DocumentsPage = () => {
 
       </div>
 
-      <div className="flex-row">
+      <div className="flex-row mx-4">
         <div className="text-4xl">
           <p>Your Projects</p>
         </div>

@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const projects = [
   {
-    name: 'Project 1',
+    name: 'SyncLab',
     icon: './noun-program-3427435.png',
     url: ''
   },

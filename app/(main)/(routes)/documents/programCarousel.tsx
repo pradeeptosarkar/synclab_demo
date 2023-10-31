@@ -5,7 +5,7 @@ const programs = [
   {
     name: 'Program 1',
     icon: './noun-program-3427435.png',
-    url: ''
+    url: 'app/pages/programs/program1.tsx'
   },
   {
     name: 'Program 2',
