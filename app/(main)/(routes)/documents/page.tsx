@@ -27,9 +27,9 @@ const DocumentsPage = () => {
   };
 
   return (
-    <div className="h-full flex flex-col items-center justify-center space-y-4">
+    <div className="h-full flex flex-col space-y-4">
 
-      <h1 className="text-3xl font-medium">
+      <h1 className="text-3xl font-medium text-center">
         Welcome to {user?.firstName}&apos;s SyncLab
       </h1>
 
@@ -50,7 +50,7 @@ const DocumentsPage = () => {
 
 
 
-      <div className="flex flex-row space-x-10">
+      <div className="flex flex-row space-x-10 justify-center">
         <Button className="w-60" onClick={onCreate}>
           <PlusCircle className="h-4 w-4 mr-2" />
           Create a new program
@@ -62,23 +62,23 @@ const DocumentsPage = () => {
         </Button>
       </div>
 
-      <div>
-        <h1 className="grid grid-cols-4 justify-items-start text-4xl">
-          Your Programs
-        </h1>
+      <div className="flex-row">
+        <div className="text-4xl">
+          <p>Your Programs</p>
+        </div>
 
         <div>
-
+          
         </div>
       </div>
 
-      <div>
-        <h1 className="grid grid-cols-4 justify-items-start text-4xl">
-          Your Projects
-        </h1>
+      <div className="flex-row">
+        <div className="text-4xl">
+          <p>Your Programs</p>
+        </div>
 
         <div>
-
+          
         </div>
       </div>
     </div>
