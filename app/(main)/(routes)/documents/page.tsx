@@ -11,6 +11,8 @@ import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import ProgramCarousel from "./programCarousel";
 import ProjectCarousel from "./projectCarousel";
+import { UserItem } from "../../_components/user-item";
+import { Logo } from "@/app/(marketing)/_components/logo";
 
 const DocumentsPage = () => {
   const router = useRouter();
@@ -31,6 +33,15 @@ const DocumentsPage = () => {
   return (
     <div className="flex flex-col space-y-4">
 
+      <div className="flex flex-row justify-between mt-6 mx-6">
+        <div>
+          <Logo/>
+        </div>
+        <div>
+          <UserItem/>
+        </div>
+
+      </div>
       <h1 className="text-3xl font-medium text-center py-10">
         Welcome to {user?.firstName}&apos;s SyncLab
       </h1>
