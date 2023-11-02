@@ -1,65 +1,67 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React from 'react';
+import Link from 'next/link';
 
 const programs = [
   {
     name: 'Program 1',
-    icon: './noun-program-3427435.png',
-    url: 'app/pages/programs/program1.tsx'
+    icon: './—Pngtree—vector folder icon_3997397.png',
+    url: 'newPage'
   },
   {
     name: 'Program 2',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 3',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 4',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 5',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 6',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 7',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 8',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 9',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 10',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 11',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   {
     name: 'Program 12',
-    icon: './noun-program-3427435.png',
+    icon: './—Pngtree—vector folder icon_3997397.png',
     url: ''
   },
   // Add more Program objects here...
@@ -95,6 +97,9 @@ const ProgramCarousel = () => {
             ))}
           </Carousel>
         </div>
+
+        <div>
+    </div>
       </div>
     );
   };

@@ -11,7 +11,8 @@ import {
   MessageCircle,
   Video,
   CalendarDays,
-  Github
+  Github,
+  Boxes
 } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { ElementRef, useEffect, useRef, useState } from "react";
@@ -176,7 +177,7 @@ export const Navigation = () => {
             icon={PlusCircle}
           />
 
-          <DocumentList/>
+          {/* <DocumentList/> */}
         </div>
 
         <div className="mt-4">
@@ -219,6 +220,15 @@ export const Navigation = () => {
           <Item
             icon={Github}
             label="dotRead Code Explorer"
+          />
+          </a>
+        </div>
+
+        <div>
+          <a href="https://dotpackages.netlify.app/" target="_blank">
+          <Item
+            icon={Boxes}
+            label="dotPackages Package Manager"
           />
           </a>
         </div>
