@@ -12,7 +12,8 @@ import {
   Video,
   CalendarDays,
   Github,
-  Boxes
+  Boxes,
+  Home
 } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { ElementRef, useEffect, useRef, useState } from "react";
@@ -159,25 +160,36 @@ export const Navigation = () => {
         </div>
 
         <div>
+          
+        </div>
+
+        <div>
           <UserItem />
+          
           <Item
-            label="Search"
-            icon={Search}
-            isSearch
-            onClick={search.onOpen}
+            label="Home Dashboard"
+            icon={Home}
+            
           />
           <Item
             label="Settings"
             icon={Settings}
             onClick={settings.onOpen}
           />
+
+<Item
+            label="Search"
+            icon={Search}
+            isSearch
+            onClick={search.onOpen}
+          />
           <Item
             onClick={handleCreate}
-            label="New note"
+            label="New Document"
             icon={PlusCircle}
           />
 
-          {/* <DocumentList/> */}
+          <DocumentList/>
         </div>
 
         <div className="mt-4">
