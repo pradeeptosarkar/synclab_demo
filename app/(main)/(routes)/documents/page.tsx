@@ -33,14 +33,13 @@ const DocumentsPage = () => {
   return (
     <div className="flex flex-col space-y-4">
 
-      <div className="flex flex-row justify-between mt-6 mx-6">
-        <div>
-          <Logo/>
+      <div className="flex flex-row justify-between mt-12 mx-16">
+        <div className="transform scale-150">
+          <Logo />
         </div>
-        <div>
-          <UserItem/>
+        <div className="transform scale-150">
+          <UserItem />
         </div>
-
       </div>
       <h1 className="text-3xl font-medium text-center py-10">
         Welcome to {user?.firstName}&apos;s SyncLab
